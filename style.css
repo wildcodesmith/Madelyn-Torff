@@ -7,6 +7,14 @@
 
 
 }
+html{
+    scroll-behavior:smooth;
+  
+   
+    scrollbar-color:  rgb(225, 175, 48) transparent;
+  
+}
+
 body{
     background-color: rgba(249, 250, 255, 1);
 }
@@ -295,7 +303,7 @@ margin-top: 140px;
     height: 102px;
     margin:0 auto;
       margin-top: 120px;
-      margin-bottom: 120px;
+ 
  
  }
 .web-footer .social-media-handle{
@@ -324,5 +332,15 @@ margin-top: 140px;
     font-family: 16px;
     opacity: 100%;
     color:rgba(130, 130, 130, 1);
+}
+
+.footer-bottom-bg{
+    background-image: url(images/Vector.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 344px;
+ 
+    margin-top: -120px;
 }
   
