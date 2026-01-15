@@ -7,6 +7,12 @@
 
 
 }
+::selection{
+ 
+ 
+    color: rgb(245, 176, 2) ;
+
+}
 html{
     scroll-behavior:smooth;
   
