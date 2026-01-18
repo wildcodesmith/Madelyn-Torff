@@ -98,6 +98,7 @@ body {
     cursor: pointer;
     filter: none;
     z-index: 1;
+    display: none;
 
 }
 
@@ -702,5 +703,9 @@ body {
 
     .nav-bar .right {
         display: none;
+    }
+
+    .nav-bar .hamburger{
+        display: block;
     }
 }
