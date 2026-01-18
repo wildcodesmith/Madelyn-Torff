@@ -358,3 +358,13 @@ margin-top: 140px;
     margin-top: -120px;
 }
   
+@media screen and (max-width:1214px) {
+    .nav-intro-sec{
+        height: auto;
+    }
+    .nav-intro-sec .intro-left{
+        margin-top: 800px;
+    }
+    
+    
+}

@@ -23,6 +23,16 @@
 
 <body>
     <nav class="nav-bar">
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+            <div class="menu_content">
+                <a href="about.html"><div>About</div></a>
+               <a href="index.html#project-section"><div>Projects</div></a>
+               <a href="contact.html"><div>Contacts</div></a>
+            </div>
+        </div>
         <a href="index.html">
             <div class="left">
                 Madelyn Torff
@@ -65,6 +75,21 @@
         <div class="web-info">Madelyn Torff 2021</div>
     </footer>
     <div class="footer-bottom-bg"></div>
+
+    <script>
+        let hamburger = document.querySelector(".hamburger")
+        let hamburger_menu_content = document.querySelector(".hamburger .menu_content")
+
+        hamburger.addEventListener('click',()=>{
+
+            hamburger_menu_content.classList.toggle("menu_content_show")
+            hamburger.classList.toggle("hamburger_translate")
+     
+
+
+
+        })
+    </script>
 </body>
 
 </html>
