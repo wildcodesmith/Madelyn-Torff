@@ -34,7 +34,7 @@
             </div>
         </div>
         <a href="index.html">
-            <div class="left">
+            <div class="left madelyn-wrapper">
                 Madelyn Torff
             </div>
         </a>
@@ -52,7 +52,8 @@
             </a>
         </div>
     </nav>
-    <section class="about-me-section-container">
+    <div class="wrapper">
+           <section class="about-me-section-container">
         <article class="about-me-section">
             <h2>About me</h2>
             <div class="about-me-section-content">Nisl arcu, scelerisque neque ut. Tincidunt amet, tempor duis tortor
@@ -75,20 +76,38 @@
         <div class="web-info">Madelyn Torff 2021</div>
     </footer>
     <div class="footer-bottom-bg"></div>
+    </div>
+ 
 
     <script>
         let hamburger = document.querySelector(".hamburger")
         let hamburger_menu_content = document.querySelector(".hamburger .menu_content")
-
+      let wrapper = document.querySelector(".wrapper")
+        let madelyn_wrapper = document.querySelector(".madelyn-wrapper")
         hamburger.addEventListener('click',()=>{
 
             hamburger_menu_content.classList.toggle("menu_content_show")
             hamburger.classList.toggle("hamburger_translate")
-     
+              wrapper.classList.toggle("wrapper-blur")
+
+           madelyn_wrapper.classList.toggle("madelyn-wrapper-blur");
+
+           
+// Disable scroll
+        function preventScroll(e) {
+  e.preventDefault();
+}
+
+window.addEventListener('wheel', preventScroll, { passive: false });
+window.addEventListener('touchmove', preventScroll, { passive: false });
 
 
 
         })
+
+
+ 
+
     </script>
 </body>
 

@@ -26,9 +26,23 @@
 </head>
 
 <body>
+ 
+
+  
     <nav class="nav-bar">
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+            <div class="menu-content">
+                <a href="about.html"><div>About</div></a>
+                <a href="index.html#project-section"><div>Projects</div></a>
+                <a href="contact.html"><div>Contacts</div></a>
+            </div>
+
+        </div>
         <a href="index.html">
-            <div class="left">
+            <div class="left madelyn-wrapper">
                 Madelyn Torff
             </div>
         </a>
@@ -47,6 +61,7 @@
             </a>
         </div>
     </nav>
+       <div class="wrapper">
     <section class="contact-sec">
         <h1>Contact Us</h1>
         <form class="contact-form">
@@ -73,6 +88,34 @@
         <div class="web-info">Madelyn Torff 2021</div>
     </footer>
     <div class="footer-bottom-bg"></div>
+      </div>
+    <script>
+        let hamburger = document.querySelector(".hamburger")
+        let menuContent = document.querySelector(".hamburger .menu-content")
+        let wrapper = document.querySelector(".wrapper")
+        let madelyn_wrapper = document.querySelector(".madelyn-wrapper")
+      
+        hamburger.addEventListener('click',()=>{
+           menuContent.classList.toggle("menu-content-show")
+           hamburger.classList.toggle("hamburger-transform")
+           wrapper.classList.toggle("wrapper-blur")
+
+           madelyn_wrapper.classList.toggle("madelyn-wrapper-blur")
+       
+          // Disable scroll
+        function preventScroll(e) {
+  e.preventDefault();
+}
+
+window.addEventListener('wheel', preventScroll, { passive: false });
+window.addEventListener('touchmove', preventScroll, { passive: false });
+
+ 
+           
+             
+        })
+
+    </script>
 </body>
 
 </html>

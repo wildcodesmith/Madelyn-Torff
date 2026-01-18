@@ -57,9 +57,17 @@ body{
 
 
 }
+.wrapper-blur{
+    filter: blur(2px);
+}
+.nav-bar .madelyn-wrapper-blur{
+    filter: blur(2px);
+}
+
 .nav-bar .hamburger{
     display: none;
     cursor: pointer;
+    z-index: 1;
 }
 
 .nav-bar .hamburger .menu_content_show div:hover{
