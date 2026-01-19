@@ -135,6 +135,8 @@ body {
     transform: translateY(-20px);
     transition: all ease 0.3s;
 
+    pointer-events: none;
+
 
 
 }
@@ -142,6 +144,7 @@ body {
 .nav-bar .hamburger .menu-content-show {
     opacity: 1;
     transform: translateY(0);
+    pointer-events: all;
 }
 
 .nav-bar .hamburger .menu-content div {
