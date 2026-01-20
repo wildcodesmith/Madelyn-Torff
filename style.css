@@ -673,7 +673,7 @@ body {
     }
 
     .nav-intro-sec .intro-left {
-        width: 466px;
+        width: fit-content;
         height: auto;
         margin-left: 10px;
     }
@@ -712,3 +712,31 @@ body {
         display: block;
     }
 }
+@media screen and (max-width:530px) {
+    
+        .project-container .project-one, .project-container .project-two, .project-container .project-three {
+            flex-direction: column;
+            background-color:transparent;
+        }
+            .project-container .project-one article, .project-container .project-two article, .project-container .project-three article{
+                background-color: white;
+                width:60%;
+                height: none;
+                padding:20px;
+                text-align: justify;
+                border-radius: 20px;
+                gap:10px;
+            }
+                .project-container figure img {
+                    border-radius: 20px;
+                }
+               .nav-intro-sec .intro-left {
+                padding:20px
+               }
+                   .nav-intro-sec .intro-left .my-name-intro{
+                    font-size: 30px;
+                   }
+
+}
+
+    
